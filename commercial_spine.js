@@ -96,9 +96,9 @@ erDiagram
         string name "forum club, grants private forums"
     }
 
-    core_members            ||..|| nexus_customers        : "is a"
-    nexus_customers         ||..o{ nexus_invoices          : "raises"
-    nexus_invoices          ||..o{ nexus_transactions      : "settled by"
+    "**core_members**"      ||..|| "**nexus_customers**"        : "is a"
+    "**nexus_customers**"   ||..o{ "**nexus_invoices**"          : "raises"
+    "**nexus_invoices**"    ||..o{ "**nexus_transactions**"      : "settled by"
     nexus_transactions      }o..|| nexus_paymethods        : "via"
     nexus_customers         ||..o{ nexus_purchases         : "owns"
     nexus_invoices          ||..o{ nexus_purchases         : "ps_original_invoice"
