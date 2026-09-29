@@ -1,3 +1,6 @@
+---
+    title: TAPESTRY INTEGRATION
+---
 erDiagram
     "**nexus_customers**" {
         bigint member_id PK
