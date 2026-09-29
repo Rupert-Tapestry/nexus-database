@@ -1,3 +1,6 @@
+---
+title: ALL TABLES
+---
 erDiagram
     "**core_members**" ||..|| "**nexus_customers**" : "is a"
     "**nexus_customers**" ||..o{ "**nexus_customer_addresses**" : ""
