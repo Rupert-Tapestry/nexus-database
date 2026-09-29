@@ -1,3 +1,6 @@
+---
+    title: CATALOGUE AND PURCHASES - FULL TABLE DESCRIPTION
+---
 erDiagram
     "**nexus_packages**" {
         int p_id PK "Primary key. This is the ID that tapestry_packages.id mirrors."
