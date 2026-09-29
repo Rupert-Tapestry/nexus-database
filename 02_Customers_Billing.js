@@ -1,3 +1,6 @@
+---
+    title: CUSTOMERS AND BILLING
+---
 erDiagram
     "**nexus_customers**" {
         bigint member_id PK
