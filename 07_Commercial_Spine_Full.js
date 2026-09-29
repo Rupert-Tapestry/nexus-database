@@ -1,3 +1,6 @@
+---
+    title: COMMERCIAL SPINE - FULL TABLE DESCRIPTION
+---
 erDiagram
     "**core_members**" {
         bigint member_id PK
