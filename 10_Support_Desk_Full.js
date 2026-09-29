@@ -1,3 +1,6 @@
+---
+    title: SUPPORT DESK - FULL TABLE DESCRIPTION
+---
 erDiagram
     "**nexus_customers**" {
         bigint member_id PK, FK "FK → core_members.member_id. A Nexus customer is a forum member; this table is the commerce extension of it."
