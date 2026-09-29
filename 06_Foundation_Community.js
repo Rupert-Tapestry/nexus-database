@@ -1,3 +1,6 @@
+---
+    title: FOUNDATION COMMUNITY
+---
 erDiagram
     "**core_members**" {
         bigint member_id PK
