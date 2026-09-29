@@ -1,3 +1,6 @@
+---
+    title: CATALOGUE AND PURCHASES
+---
 erDiagram
     "**nexus_packages**" {
         int p_id PK "shared with tapestry_packages.id"
