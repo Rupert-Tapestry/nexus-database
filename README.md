@@ -24,4 +24,7 @@ Added subfolder for files I have downloaded directly from the FSF-Forum GitHub r
 Output files generated from Claude analysis of Nexus schema.json.
 
 Adding markdown (and other files) that I am generating as I analyse and understand this schema.
+- Nexus schema
+- How a support stream (user defined filter to search for support requests) works
+- what makesup a support request (ticket)
 
