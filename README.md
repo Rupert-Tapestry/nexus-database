@@ -13,3 +13,7 @@ These are the .html files that are included in this repo: (**file name**, *sourc
 - **database-schema.html** (*Ben S - Claude query, 2026/09/15*)
 - **FSF-Data-Model.html** (*Rupert - Claude, no mermaid.js class in .htnl, so ERD's do not redner, 2026/09/29*)
 - **fsf-erd-standalone.html** (*Rupert - Claude, standalone version for class for mermaid.js to fully render the ERD's, 2026/09/29*)
+
+**2026/10/02:**\
+Added a downloaded .json schema file from the FSF-Forum Github repo:
+- **applications/nexus/data/schema.json**
