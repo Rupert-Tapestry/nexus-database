@@ -27,4 +27,4 @@ Adding markdown (and other files) that I am generating as I analyse and understa
 - Nexus schema
 - How a support stream (user defined filter to search for support requests) works
 - what makesup a support request (ticket)
-
+- how a customer is defined
