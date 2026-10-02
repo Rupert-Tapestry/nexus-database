@@ -16,4 +16,4 @@ These are the .html files that are included in this repo: (**file name**, *sourc
 
 **2026/10/02:**\
 Added a downloaded .json schema file from the FSF-Forum Github repo:
-- **applications/nexus/data/schema.json**
+- **applications/nexus/data/schema.json** - nexus_schema.json
