@@ -19,7 +19,7 @@ Added a downloaded .json schema file from the FSF-Forum Github repo:
 - **applications/nexus/data/schema.json** - nexus_schema.json
 - **applications/core/data/schema.json** - core_schema.json
 
-\
+
 Added subfolder for files I have downloaded directly from the FSF-Forum GitHub repo.
 Output files generated from Claude analysis of Nexus schema.json
-\
+
