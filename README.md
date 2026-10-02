@@ -21,5 +21,7 @@ Added a downloaded .json schema file from the FSF-Forum Github repo:
 
 
 Added subfolder for files I have downloaded directly from the FSF-Forum GitHub repo.
-Output files generated from Claude analysis of Nexus schema.json
+Output files generated from Claude analysis of Nexus schema.json.
+
+Adding markdown (and other files) that I am generating as I analyse and understand this schema.
 
