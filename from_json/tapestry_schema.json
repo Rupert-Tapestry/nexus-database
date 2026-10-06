@@ -1,0 +1,672 @@
+{
+    "tapestry_packages": {
+        "name": "tapestry_packages",
+        "columns": {
+            "id": {
+                "name": "id",
+                "type": "BIGINT",
+                "length": "20",
+                "unsigned": true,
+                "zerofill": false,
+                "binary": false,
+                "allow_null": false,
+                "default": null,
+                "auto_increment": true,
+                "comment": "ID Number"
+            },
+            "children": {
+                "name": "children",
+                "type": "INT",
+                "length": 10,
+                "decimals": null,
+                "values": null,
+                "allow_null": false,
+                "default": "0",
+                "comment": "Max number of children",
+                "unsigned": true,
+                "zerofill": false,
+                "auto_increment": false,
+                "binary": false
+            }
+        },
+        "indexes": {
+            "PRIMARY": {
+                "type": "primary",
+                "name": "PRIMARY",
+                "columns": [
+                    "id"
+                ],
+                "length": [
+                    null
+                ]
+            }
+        },
+        "inserts": [
+            {
+                "id": "12",
+                "children": "12"
+            },
+            {
+                "id": "25",
+                "children": "20"
+            },
+            {
+                "id": "13",
+                "children": "40"
+            },
+            {
+                "id": "14",
+                "children": "60"
+            },
+            {
+                "id": "18",
+                "children": "90"
+            },
+            {
+                "id": "15",
+                "children": "120"
+            },
+            {
+                "id": "26",
+                "children": "150"
+            },
+            {
+                "id": "16",
+                "children": "180"
+            },
+            {
+                "id": "17",
+                "children": "240"
+            },
+            {
+                "id": "24",
+                "children": "300"
+            },
+            {
+                "id": "29",
+                "children": "350"
+            },
+            {
+                "id": "30",
+                "children": "400"
+            },
+            {
+                "id": "9",
+                "children": "60"
+            },
+            {
+                "id": "10",
+                "children": "120"
+            },
+            {
+                "id": "11",
+                "children": "5000"
+            }
+        ]
+    },
+    "tapestry_api_log": {
+        "name": "tapestry_api_log",
+        "columns": {
+            "api_id": {
+                "name": "api_id",
+                "type": "BIGINT",
+                "length": 20,
+                "decimals": null,
+                "values": null,
+                "allow_null": false,
+                "default": null,
+                "comment": "ID Number",
+                "unsigned": true,
+                "zerofill": false,
+                "auto_increment": true,
+                "binary": false
+            },
+            "api_method": {
+                "name": "api_method",
+                "type": "VARCHAR",
+                "length": 100,
+                "decimals": null,
+                "values": null,
+                "allow_null": true,
+                "default": null,
+                "comment": "",
+                "unsigned": false,
+                "zerofill": false,
+                "auto_increment": false,
+                "binary": false
+            },
+            "api_post": {
+                "name": "api_post",
+                "type": "TEXT",
+                "length": null,
+                "decimals": null,
+                "values": null,
+                "allow_null": true,
+                "default": null,
+                "comment": "",
+                "unsigned": false,
+                "zerofill": false,
+                "auto_increment": false,
+                "binary": false
+            },
+            "api_return": {
+                "name": "api_return",
+                "type": "TEXT",
+                "length": null,
+                "decimals": null,
+                "values": null,
+                "allow_null": true,
+                "default": null,
+                "comment": "",
+                "unsigned": false,
+                "zerofill": false,
+                "auto_increment": false,
+                "binary": false
+            },
+            "api_date": {
+                "name": "api_date",
+                "type": "INT",
+                "length": 10,
+                "decimals": null,
+                "values": null,
+                "allow_null": false,
+                "default": "0",
+                "comment": "",
+                "unsigned": true,
+                "zerofill": false,
+                "auto_increment": false,
+                "binary": false
+            },
+            "api_failed": {
+                "name": "api_failed",
+                "type": "INT",
+                "length": 1,
+                "decimals": null,
+                "values": null,
+                "allow_null": false,
+                "default": "0",
+                "comment": "",
+                "unsigned": true,
+                "zerofill": false,
+                "auto_increment": false,
+                "binary": false
+            }
+        },
+        "indexes": {
+            "PRIMARY": {
+                "type": "primary",
+                "name": "PRIMARY",
+                "columns": [
+                    "api_id"
+                ],
+                "length": [
+                    null
+                ]
+            },
+            "api_failed": {
+                "type": "key",
+                "name": "api_failed",
+                "columns": [
+                    "api_failed"
+                ],
+                "length": [
+                    null
+                ]
+            }
+        }
+    },
+    "tapestry_support_request_schools": {
+        "name": "tapestry_support_request_schools",
+        "columns": {
+            "request_id": {
+                "allow_null": false,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "",
+                "decimals": null,
+                "default": "",
+                "length": 10,
+                "name": "request_id",
+                "type": "INT",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "school_id": {
+                "allow_null": false,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "",
+                "decimals": null,
+                "default": "",
+                "length": 10,
+                "name": "school_id",
+                "type": "INT",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            }
+        },
+        "indexes": {
+            "PRIMARY": {
+                "type": "primary",
+                "name": "PRIMARY",
+                "length": [
+                    null,
+                    null
+                ],
+                "columns": [
+                    "request_id",
+                    "school_id"
+                ]
+            },
+            "request_id": {
+                "type": "key",
+                "name": "request_id",
+                "length": [
+                    null
+                ],
+                "columns": [
+                    "request_id"
+                ]
+            },
+            "school_id": {
+                "type": "key",
+                "name": "school_id",
+                "length": [
+                    null
+                ],
+                "columns": [
+                    "school_id"
+                ]
+            }
+        },
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB",
+        "comment": "Map support requests to related schools"
+    },
+    "tapestry_promised": {
+        "name": "tapestry_promised",
+        "columns": {
+            "promise_id": {
+                "allow_null": false,
+                "auto_increment": true,
+                "binary": false,
+                "comment": "",
+                "decimals": null,
+                "default": null,
+                "length": 10,
+                "name": "promise_id",
+                "type": "INT",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "promise_invoice_id": {
+                "allow_null": false,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "",
+                "decimals": null,
+                "default": "0",
+                "length": 10,
+                "name": "promise_invoice_id",
+                "type": "INT",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "promise_invoice_total": {
+                "allow_null": false,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "",
+                "decimals": null,
+                "default": "",
+                "length": 200,
+                "name": "promise_invoice_total",
+                "type": "VARCHAR",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "promise_school_id": {
+                "allow_null": false,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "",
+                "decimals": null,
+                "default": "0",
+                "length": 10,
+                "name": "promise_school_id",
+                "type": "INT",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "promise_date_added": {
+                "allow_null": false,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "",
+                "decimals": null,
+                "default": "0",
+                "length": 10,
+                "name": "promise_date_added",
+                "type": "INT",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "promise_date_expire": {
+                "allow_null": false,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "",
+                "decimals": null,
+                "default": "0",
+                "length": 10,
+                "name": "promise_date_expire",
+                "type": "INT",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "promise_actioned": {
+                "allow_null": false,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "",
+                "decimals": null,
+                "default": "0",
+                "length": 1,
+                "name": "promise_actioned",
+                "type": "INT",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "promise_purchase_expiration": {
+                "name": "promise_purchase_expiration",
+                "type": "TEXT",
+                "length": null,
+                "decimals": null,
+                "values": null,
+                "allow_null": true,
+                "default": null,
+                "comment": "",
+                "unsigned": false,
+                "zerofill": false,
+                "auto_increment": false,
+                "binary": false
+            },
+            "promise_reminder_last_emailed": {
+                "name": "promise_reminder_last_emailed",
+                "type": "INT",
+                "length": null,
+                "decimals": null,
+                "values": null,
+                "allow_null": false,
+                "default": 0,
+                "comment": "The last time a reminder email was sent",
+                "unsigned": true,
+                "auto_increment": false
+            },
+            "promise_expired_notice_sent": {
+                "name": "promise_expired_notice_sent",
+                "type": "INT",
+                "length": null,
+                "decimals": null,
+                "values": null,
+                "allow_null": true,
+                "default": "0",
+                "comment": "",
+                "unsigned": true,
+                "auto_increment": false
+            }
+        },
+        "indexes": {
+            "PRIMARY": {
+                "type": "primary",
+                "name": "PRIMARY",
+                "length": [
+                    null
+                ],
+                "columns": [
+                    "promise_id"
+                ]
+            },
+            "invoice_promise": {
+                "type": "key",
+                "name": "invoice_promise",
+                "length": [
+                    null,
+                    null
+                ],
+                "columns": [
+                    "promise_invoice_id",
+                    "promise_actioned"
+                ]
+            }
+        },
+        "collation": "utf8mb4_unicode_ci",
+        "engine": "InnoDB"
+    },
+    "tapestry_globalpay": {
+        "name": "tapestry_globalpay",
+        "columns": {
+            "gp_key": {
+                "allow_null": false,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "The key",
+                "decimals": null,
+                "default": "",
+                "length": 100,
+                "name": "gp_key",
+                "type": "VARCHAR",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "gp_value": {
+                "allow_null": false,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "The value",
+                "decimals": null,
+                "default": "",
+                "length": 0,
+                "name": "gp_value",
+                "type": "LONGTEXT",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            },
+            "gp_expire": {
+                "allow_null": false,
+                "auto_increment": false,
+                "binary": false,
+                "comment": "Unix timestamp of when the cache expires",
+                "decimals": null,
+                "default": "",
+                "length": 10,
+                "name": "gp_expire",
+                "type": "INT",
+                "unsigned": false,
+                "values": [],
+                "zerofill": false
+            }
+        },
+        "indexes": {
+            "gp_key": {
+                "type": "unique",
+                "name": "gp_key",
+                "length": [
+                    null
+                ],
+                "columns": [
+                    "gp_key"
+                ]
+            },
+            "keyexpire": {
+                "type": "key",
+                "name": "keyexpire",
+                "length": [
+                    null,
+                    null
+                ],
+                "columns": [
+                    "gp_key",
+                    "gp_expire"
+                ]
+            },
+            "cache_expire": {
+                "type": "key",
+                "name": "cache_expire",
+                "length": [
+                    null
+                ],
+                "columns": [
+                    "gp_expire"
+                ]
+            }
+        },
+        "collation": "utf8_general_ci",
+        "engine": "InnoDB",
+        "comment": ""
+    },
+    "tapestry_findus": {
+        "name": "tapestry_findus",
+        "columns": {
+            "findus_id": {
+                "allow_null": false,
+                "auto_increment": true,
+                "comment": "",
+                "decimals": null,
+                "default": null,
+                "length": 10,
+                "name": "findus_id",
+                "type": "INT",
+                "unsigned": false,
+                "values": []
+            },
+            "findus_answer": {
+                "allow_null": false,
+                "auto_increment": false,
+                "comment": "",
+                "decimals": null,
+                "default": null,
+                "length": 200,
+                "name": "findus_answer",
+                "type": "VARCHAR",
+                "unsigned": false,
+                "values": []
+            },
+            "findus_other": {
+                "allow_null": true,
+                "auto_increment": false,
+                "comment": "",
+                "decimals": null,
+                "default": null,
+                "length": 0,
+                "name": "findus_other",
+                "type": "TEXT",
+                "unsigned": false,
+                "values": []
+            },
+            "findus_other_used": {
+                "allow_null": true,
+                "auto_increment": false,
+                "comment": "",
+                "decimals": null,
+                "default": "0",
+                "length": 1,
+                "name": "findus_other_used",
+                "type": "INT",
+                "unsigned": false,
+                "values": []
+            },
+            "findus_date": {
+                "allow_null": true,
+                "auto_increment": false,
+                "comment": "",
+                "decimals": null,
+                "default": "0",
+                "length": 10,
+                "name": "findus_date",
+                "type": "INT",
+                "unsigned": false,
+                "values": []
+            },
+            "findus_member_id": {
+                "allow_null": true,
+                "auto_increment": false,
+                "comment": "",
+                "decimals": null,
+                "default": "0",
+                "length": 10,
+                "name": "findus_member_id",
+                "type": "INT",
+                "unsigned": false,
+                "values": []
+            },
+            "findus_ip_address": {
+                "allow_null": true,
+                "auto_increment": false,
+                "comment": "",
+                "decimals": null,
+                "default": null,
+                "length": 255,
+                "name": "findus_ip_address",
+                "type": "VARCHAR",
+                "unsigned": false,
+                "values": []
+            }
+        },
+        "indexes": {
+            "PRIMARY": {
+                "type": "primary",
+                "name": "PRIMARY",
+                "length": [
+                    null
+                ],
+                "columns": [
+                    "findus_id"
+                ]
+            },
+            "findus_other_used": {
+                "type": "key",
+                "name": "findus_other_used",
+                "length": [
+                    null
+                ],
+                "columns": [
+                    "findus_other_used"
+                ]
+            },
+            "findus_date": {
+                "type": "key",
+                "name": "findus_date",
+                "length": [
+                    null
+                ],
+                "columns": [
+                    "findus_date"
+                ]
+            },
+            "findus_member_id": {
+                "type": "key",
+                "name": "findus_member_id",
+                "length": [
+                    null
+                ],
+                "columns": [
+                    "findus_member_id"
+                ]
+            }
+        },
+        "collation": "utf8_general_ci",
+        "engine": "InnoDB"
+    }
+}
